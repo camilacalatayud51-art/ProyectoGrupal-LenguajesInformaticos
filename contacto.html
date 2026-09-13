@@ -5,29 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Paseo del Horizonte</title>
 </head>
-<body>
+<body id="arriba">
 
     <header>
         <h1>Paseo del Horizonte</h1>
         <nav>
-            <a href="ciudad.html">Ciudad</a>
-            <a href="lugares.html">Lugares de interes</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="actividades.html">Actividades</a>
-            <a href="index.html">Volver a inicio</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="lugares.html">Lugares de interés</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-
     </header>
 
     <main>
+        <!-- Enlace interno dentro de la misma página (#id) -->
+        <p><a href="#formulario">¿Tenés una duda puntual? Ir directo al formulario de consultas</a></p>
+
         <section>
-            <h2>Contacto</h2>
-            <p>Aquí irá el formulario o la información de contacto.</p>
+            <h2>Oficina Central de Turismo</h2>
+            <p>La sede central de atención al visitante se encuentra frente a la histórica <strong>Plaza del Horizonte</strong>, epicentro de la vida social y nocturna de nuestra ciudad fundada en <em>1927</em>.</p>
+
+            <!-- Datos de contacto con address, tel y mailto -->
+            <address>
+                <p>Dirección: Av. Costanera y Plaza del Horizonte, Paseo del Horizonte</p>
+                <p>Teléfono de informes: <a href="tel:+541155551927">(011) 5555-1927</a></p>
+                <p>Correo electrónico: <a href="mailto:turismo@paseodelhorizonte.gob.ar">turismo@paseodelhorizonte.gob.ar</a></p>
+            </address>
+
+            <!-- Lista de descripción semántica con los horarios -->
+            <h3>Horarios de atención</h3>
+            <dl>
+                <dt>Lunes a Jueves</dt>
+                <dd>08:00 a 20:00 hs (Información general y paseos de playa)</dd>
+
+                <dt>Viernes y Sábados</dt>
+                <dd>08:00 a 02:00 hs (Guardia especial del circuito gastronómico y nocturno)</dd>
+
+                <dt>Domingos</dt>
+                <dd>09:00 a 18:00 hs</dd>
+            </dl>
         </section>
+
+        <!-- Sección de Formulario de Consultas -->
+        <section id="formulario">
+            <h2>Formulario de consultas</h2>
+            <p>Completá tus datos para recibir asesoramiento sobre hotelería, reservas naturales o el circuito de bares:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre y apellido:</label><br>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Lucas Martínez">
+                    </p>
+                    <p>
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="tunombre@correo.com">
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234-5678">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motivo de la consulta</legend>
+                    <p>
+                        <label for="tipo-consulta">Área de interés:</label><br>
+                        <select id="tipo-consulta" name="tipo-consulta">
+                            <option value="playa">Actividades diurnas y playas</option>
+                            <option value="noche">Circuito nocturno (Plaza del Horizonte / Bares)</option>
+                            <option value="alojamiento">Hoteles y balnearios</option>
+                            <option value="otro">Otras consultas generales</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Escribí tu consulta aquí..."></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar mensaje</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Aside informativo con teléfonos de guardia -->
+        <aside>
+            <h2>Puestos de auxilio y asistencia</h2>
+            <ul>
+                <li><strong>Guardavidas Central:</strong> Casilla Bajada del Muelle</li>
+                <li><strong>SAME Costero:</strong> Línea 107</li>
+                <li><strong>Guardia Urbana Plaza del Horizonte:</strong> <a href="tel:+541155559110">(011) 5555-9110</a></li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
-        <p>&copy; Trabajo Practico Grupal - Lenguajes Informaticos</p>
+        <p>&copy; Trabajo Práctico Grupal - Lenguajes Informáticos</p>
+        
+        <!-- Enlace a red social externa (obligatorio: target="_blank" y rel="noopener noreferrer") -->
+        <p>Seguí las novedades en nuestra red social: 
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">@TurismoPaseoDelHorizonte</a>
+        </p>
+
+        <!-- Enlace interno para volver arriba -->
+        <p><a href="#arriba">Volver arriba</a></p>
     </footer>
 
 </body>
