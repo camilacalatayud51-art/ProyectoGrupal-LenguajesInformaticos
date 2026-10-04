@@ -1,0 +1,34 @@
+:root {
+    --verde-jade: #008571;
+    --marron-claro: #C9A66B;
+    --crema: #F5F1E8;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: var(--verde-jade);
+    text-align: center;
+    padding: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    background-color: var(--crema);
+    padding: 2px;
+}
+
+footer {
+    background-color: var(--marron-claro);
+    padding: 15px;
+    text-align: center;
+}
