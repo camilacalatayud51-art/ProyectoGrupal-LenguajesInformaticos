@@ -33,10 +33,16 @@ footer {
     text-align: center;
 }
 .introduccion {
-    text-align: center;         /* Centra el texto en la pantalla */
-    max-width: 700px;           /* Evita que se estire demasiado a lo ancho */
-    margin: 30px auto;          /* Lo separa del título de arriba y de las tarjetas de abajo */
-    font-size: 1.15rem;         /* Hace la letra un poquito más grande y legible */
-    color: #444;                /* Un color gris oscuro elegante, más suave que el negro */
-    line-height: 1.6;           /* Le da espacio entre líneas para que sea cómodo de leer */
+    text-align: center;   
+    max-width: 700px;        
+    margin: 30px auto;        
+    font-size: 1.15rem;         
+    color: #444;              
+    line-height: 1.6;           
+}
+.titulo-lugares {
+    font-size: 2.2rem;         
+    font-weight: bold;          
+    color: var(--verde-jade);   
+    margin-bottom: 10px;        
 }
