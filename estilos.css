@@ -1,11 +1,53 @@
+/*VARIABLES Y PALETA DE COLORES*/
+
 :root {
     --verde-jade: #008571;
     --marron-claro: #C9A66B;
     --crema: #F5F1E8;
+    --fuente-principal: "Libre Caslon Condensed", serif;
+    --texto-principal: #2C2C2C;
+}
+
+/*RESET UNIVERSAL Y TIPOGRAFÍA GLOBAL*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0px;
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--crema);
+    color: var(--texto-principal);
+}
+
+/*JERARQUÍA DE HEADINGS*/
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 header {
@@ -32,6 +74,144 @@ footer {
     padding: 15px;
     text-align: center;
 }
+
+=======
+.introduccion {
+    text-align: center;   
+    max-width: 700px;        
+    margin: 30px auto;        
+    font-size: 1.15rem;         
+    color: #444;              
+    line-height: 1.6;           
+}
+.titulo-lugares {
+    font-size: 2.2rem;         
+    font-weight: bold;          
+    color: black;   
+    margin-bottom: 10px;
+    text-align: center;        
+}
+.mi-menu-lugares {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mi-menu-lugares a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.titulo-paseo {
+    color: #ffffff !important;  
+    font-size: 2.0rem;        
+    font-weight: bold;         
+    margin-top: 15px;         
+    margin-bottom: 5px;       
+}
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;    
+    gap: 40px;            
+    margin-top: 30px;
+}
+.tarjeta-lugar {
+    text-align: center;      
+    max-width: 500px;         
+}
+.tarjeta-lugar img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    width: 1200px;
+    max-width: 800px;       
+    height: auto; 
+    position: relative;
+    left: -120px;
+         
+}
+
+/* ESTILOS DE CONTACTO (Formularios y Listas) */
+
+form {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+fieldset {
+    border: 1px solid var(--marron-claro);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--verde-jade);
+    padding: 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--verde-jade);
+}
+
+button[type="submit"] {
+    background-color: var(--verde-jade);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #006655;
+}
+
+
+dl {
+    background-color: var(--blanco);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--verde-jade);
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+>>>>>>> 82952d030ee922be3f20905484e968f3a87c1e14
 
 /* ==========================================
    ESTILOS DEL INDEX (body.pagina-inicio)
