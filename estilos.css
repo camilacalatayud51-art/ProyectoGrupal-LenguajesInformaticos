@@ -209,3 +209,128 @@ dd {
     margin-left: 15px;
     margin-bottom: 5px;
 }
+/* ==========================================
+   ESTILOS DEL INDEX (body.pagina-inicio)
+   Autor: Sosa Facundo
+   Solo afectan a index.html
+   ========================================== */
+
+/* Tipografía base */
+body.pagina-inicio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Headings diferenciados en tamaño y color */
+.pagina-inicio h1 {
+    font-size: 2.5rem;
+    color: #fff;                  /* está sobre el header jade, se lee bien en blanco */
+    margin: 0.5rem 0;
+}
+
+.pagina-inicio h2 {
+    font-size: 1.8rem;
+    color: var(--verde-jade);
+}
+
+.pagina-inicio h3 {
+    font-size: 1.3rem;
+    color: #222;
+    border-bottom: 2px solid var(--marron-claro);
+    padding-bottom: 4px;
+}
+
+/* Header y menú */
+.pagina-inicio header {
+    padding: 10px 20px;
+}
+
+.pagina-inicio header ul {
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+.pagina-inicio header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.pagina-inicio nav a:hover,
+.pagina-inicio nav a[aria-current="page"] {
+    background-color: var(--marron-claro);
+    color: #222;
+}
+
+/* Contenido */
+.pagina-inicio main {
+    padding: 20px;
+}
+
+.pagina-inicio main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagina-inicio article {
+    background-color: #fff;
+    border-left: 4px solid var(--marron-claro);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.pagina-inicio .logo-grande {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 220px;
+    height: auto;
+}
+
+/* Logo arriba a la izquierda */
+.pagina-inicio header {
+    position: relative;
+    padding: 10px 160px;   /* espacio a los lados para que el logo no pise el título */
+}
+
+.pagina-inicio .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+    width: auto;
+}
+
+/* Foto de portada más compacta */
+.pagina-inicio .portada {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    object-fit: cover;     /* recorta en vez de deformar */
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+/* Pantallas chicas: el logo pasa arriba, centrado */
+@media (max-width: 800px) {
+    .pagina-inicio header {
+        padding: 10px 20px;
+    }
+
+    .pagina-inicio .logo {
+        position: static;
+        transform: none;
+        display: block;
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    .pagina-inicio .portada {
+        height: 200px;
+    }
+}
