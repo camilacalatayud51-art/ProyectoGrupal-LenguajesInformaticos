@@ -9,26 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body id="arriba">
 
-    <header>
-        <h1>Paseo del Horizonte</h1>
+<body>
+
+    <header class="encabezado">
+
+        <img class="logo" src="Imagenes/logopelado.png" alt="">
+        
+        <h1 class="titulo-principal">Paseo del Horizonte</h1>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de interés</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="encabezado-lista">
+                <li><a class="navegacion-enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion-enlace" href="ciudad.html">Ciudad</a></li>
+                <li><a class="navegacion-enlace" href="lugares.html">Lugares de interés</a></li>
+                <li><a class="navegacion-enlace" href="actividades.html">Actividades</a></li>
+                <li><a class="navegacion-enlace activo" href="contacto.html" aria-current="page">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
         <p><a href="#formulario">¿Tenés una duda puntual? Ir al formulario de consultas</a></p>
 
         <section>
-            <h2>Oficina Central de Turismo</h2>
+            <h2 class="titulo-seccion">Oficina Central de Turismo</h2>
             <p>La sede central de atención al visitante se encuentra frente a la histórica <strong>Plaza del Horizonte</strong>, epicentro de la vida social y nocturna de nuestra ciudad fundada en <em>1927</em>.</p>
 
             <address>
@@ -37,7 +43,7 @@
                 <p>Correo electrónico: <a href="mailto:turismo@paseodelhorizonte.gob.ar">turismo@paseodelhorizonte.gob.ar</a></p>
             </address>
 
-            <h3>Horarios de atención</h3>
+            <h3 class="titulo-seccion">Horarios de atención</h3>
             <dl>
                 <dt>Lunes a Jueves</dt>
                 <dd>08:00 a 20:00 hs (Información general y paseos de playa)</dd>
@@ -51,7 +57,7 @@
         </section>
 
         <section id="formulario">
-            <h2>Formulario de consultas</h2>
+            <h2 class="titulo-seccion">Formulario de consultas</h2>
             <p>Completá tus datos para recibir asesoramiento sobre hotelería, reservas naturales o el circuito de bares:</p>
 
             <form action="#" method="post">

@@ -9,24 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Paseo del Horizonte</h1>
+    <header class="encabezado">
+
+        <img class="logo" src="Imagenes/logopelado.png" alt="">
+        
+        <h1 class="titulo-principal">Paseo del Horizonte</h1>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de interés</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="encabezado-lista">
+                <li><a class="navegacion-enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion-enlace" href="ciudad.html">Ciudad</a></li>
+                <li><a class="navegacion-enlace" href="lugares.html">Lugares de interés</a></li>
+                <li><a class="navegacion-enlace activo" href="actividades.html"  aria-current="page">Actividades</a></li>
+                <li><a class="navegacion-enlace" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
         <section>
-            <h2>Actividades de esta semana</h2>
+            <h2 class="titulo-seccion">Actividades de esta semana</h2>
             <p>Aquí irá el contenido detallado sobre las actividades disponibles en la ciudad.</p>
         </section>
     </main>

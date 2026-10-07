@@ -74,6 +74,7 @@ footer {
     padding: 15px;
     text-align: center;
 }
+
 .introduccion {
     text-align: center;   
     max-width: 700px;        
@@ -85,7 +86,7 @@ footer {
 .titulo-lugares {
     font-size: 2.2rem;         
     font-weight: bold;          
-    color: black;   
+    color: var(--verde-jade);   
     margin-bottom: 10px;
     text-align: center;        
 }
@@ -116,10 +117,16 @@ footer {
     gap: 40px;            
     margin-top: 30px;
 }
+
 .tarjeta-lugar {
     text-align: center;      
     max-width: 500px;         
 }
+
+.tarjeta-lugar h3 {
+color: var(--verde-jade);       
+}
+
 .tarjeta-lugar img {
     display: block;
     margin: 15px auto;
@@ -129,7 +136,6 @@ footer {
     height: auto; 
     position: relative;
     left: -120px;
-         
 }
 
 /* ESTILOS DE CONTACTO (Formularios y Listas) */
@@ -209,50 +215,51 @@ dd {
     margin-left: 15px;
     margin-bottom: 5px;
 }
-/* ==========================================
-   ESTILOS DEL INDEX (body.pagina-inicio)
-   Autor: Sosa Facundo
-   Solo afectan a index.html
-   ========================================== */
 
-/* Tipografía base */
-body.pagina-inicio {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #222;
-}
 
-/* Headings diferenciados en tamaño y color */
-.pagina-inicio h1 {
+/* =========================
+   TÍTULOS
+   ========================= */
+
+.titulo-principal {
     font-size: 2.5rem;
-    color: #fff;                  /* está sobre el header jade, se lee bien en blanco */
+    color: #fff;
     margin: 0.5rem 0;
 }
 
-.pagina-inicio h2 {
+.titulo-seccion {
     font-size: 1.8rem;
     color: var(--verde-jade);
 }
 
-.pagina-inicio h3 {
+.titulo-subseccion {
     font-size: 1.3rem;
     color: #222;
     border-bottom: 2px solid var(--marron-claro);
     padding-bottom: 4px;
 }
 
-/* Header y menú */
-.pagina-inicio header {
-    padding: 10px 20px;
+
+/* =========================
+   HEADER
+   ========================= */
+
+.encabezado {
+    position: relative;
+    padding: 10px 160px;
 }
 
-.pagina-inicio header ul {
+.encabezado-lista {
     flex-wrap: wrap;
     margin: 0.5rem 0;
 }
 
-.pagina-inicio header a {
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+.navegacion-enlace {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -260,43 +267,18 @@ body.pagina-inicio {
     border-radius: 4px;
 }
 
-.pagina-inicio nav a:hover,
-.pagina-inicio nav a[aria-current="page"] {
+.navegacion-enlace:hover,
+.navegacion-enlace.activo {
     background-color: var(--marron-claro);
     color: #222;
 }
 
-/* Contenido */
-.pagina-inicio main {
-    padding: 20px;
-}
 
-.pagina-inicio main img {
-    max-width: 100%;
-    height: auto;
-}
+/* =========================
+   LOGOS
+   ========================= */
 
-.pagina-inicio article {
-    background-color: #fff;
-    border-left: 4px solid var(--marron-claro);
-    padding: 10px 20px;
-    margin-bottom: 15px;
-}
-
-.pagina-inicio .logo-grande {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 220px;
-    height: auto;
-}
-
-/* Logo arriba a la izquierda */
-.pagina-inicio header {
-    position: relative;
-    padding: 10px 160px;   /* espacio a los lados para que el logo no pise el título */
-}
-
-.pagina-inicio .logo {
+.logo {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -305,24 +287,61 @@ body.pagina-inicio {
     width: auto;
 }
 
-/* Foto de portada más compacta */
-.pagina-inicio .portada {
+.logo-grande {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 220px;
+    height: auto;
+}
+
+
+/* =========================
+   CONTENIDO
+   ========================= */
+
+.contenido-principal {
+    padding: 20px;
+}
+
+.imagen-contenido {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta-contenido {
+    background-color: #fff;
+    border-left: 4px solid var(--marron-claro);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PORTADA
+   ========================= */
+
+.portada {
     display: block;
     width: 100%;
     max-width: 800px;
     height: 300px;
-    object-fit: cover;     /* recorta en vez de deformar */
+    object-fit: cover;
     margin: 0 auto 20px;
     border-radius: 8px;
 }
 
-/* Pantallas chicas: el logo pasa arriba, centrado */
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
 @media (max-width: 800px) {
-    .pagina-inicio header {
+
+    .encabezado {
         padding: 10px 20px;
     }
 
-    .pagina-inicio .logo {
+    .logo {
         position: static;
         transform: none;
         display: block;
@@ -330,7 +349,7 @@ body.pagina-inicio {
         height: 80px;
     }
 
-    .pagina-inicio .portada {
+    .portada {
         height: 200px;
     }
 }
