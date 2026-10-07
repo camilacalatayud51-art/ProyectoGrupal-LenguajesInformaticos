@@ -44,7 +44,7 @@
             </address>
 
             <h3 class="titulo-seccion">Horarios de atención</h3>
-            <dl>
+            <dl class="lista-datos">
                 <dt>Lunes a Jueves</dt>
                 <dd>08:00 a 20:00 hs (Información general y paseos de playa)</dd>
 
@@ -56,32 +56,32 @@
             </dl>
         </section>
 
-        <section id="formulario">
+        <section>
             <h2 class="titulo-seccion">Formulario de consultas</h2>
             <p>Completá tus datos para recibir asesoramiento sobre hotelería, reservas naturales o el circuito de bares:</p>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Datos personales</legend>
+            <form class="formulario" action="#" method="post">
+                <fieldset class="formulario-fieldset">
+                    <legend class="formulario-legend">Datos personales</legend>
                     <p>
                         <label for="nombre">Nombre y apellido:</label><br>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        <input class="formulario-input" type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
                     </p>
                     <p>
                         <label for="email">Correo electrónico:</label><br>
-                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        <input class="formulario-input"  type="email" id="email" name="email" required placeholder="tu@email.com">
                     </p>
                     <p>
                         <label for="telefono">Teléfono:</label><br>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+                        <input class="formulario-input"  type="tel" id="telefono" name="telefono" placeholder="Opcional">
                     </p>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Motivo de la consulta</legend>
+                <fieldset class="formulario-fieldset">
+                    <legend class="formulario-legend">Motivo de la consulta</legend>
                     <p>
                         <label for="tipo-consulta">Área de interés:</label><br>
-                        <select id="tipo-consulta" name="tipo-consulta">
+                        <select class="formulario-input" id="tipo-consulta" name="tipo-consulta">
                             <option value="playa">Actividades diurnas y playas</option>
                             <option value="noche">Circuito nocturno (Plaza del Horizonte / Bares)</option>
                             <option value="alojamiento">Hoteles y balnearios</option>
@@ -90,10 +90,10 @@
                     </p>
                     <p>
                         <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Dejanos tu consulta..."></textarea>
+                        <textarea  class="formulario-input" id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Dejanos tu consulta..."></textarea>
                     </p>
                     <p>
-                        <button type="submit">Enviar consulta</button>
+                        <button class="formulario-boton" type="submit">Enviar consulta</button>
                     </p>
                 </fieldset>
             </form>
@@ -109,7 +109,7 @@
         </aside>
     </main>
 
-    <footer>
+    <footer class="pie-pagina">
         <p>&copy; Trabajo Práctico Grupal - Lenguajes Informáticos</p>
     </footer>
 
