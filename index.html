@@ -3,79 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paseo del Horizonte</title>
+    <title>Inicio | Paseo del Horizonte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Paseo del Horizonte</h1>
+    <header class="encabezado">
+
+        <img class="logo" src="Imagenes/logopelado.png" alt="">
+
+        <h1 class="titulo-principal">Paseo del Horizonte</h1>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de interés</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="encabezado-lista">
+                <li><a class="navegacion-enlace activo" href="index.html" aria-current="page">Inicio</a></li>
+                <li><a class="navegacion-enlace" href="ciudad.html">Ciudad</a></li>
+                <li><a class="navegacion-enlace" href="lugares.html">Lugares de interés</a></li>
+                <li><a class="navegacion-enlace" href="actividades.html">Actividades</a></li>
+                <li><a class="navegacion-enlace" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
-        
+
     <main>
-        <img src="imagenes/playa-index.jpg" alt="Vista de Paseo del Horizonte durante el día" width="1000">
-    <section>
-        <h2>Conocé la ciudad de tus sueños</h2>
-       <p> Paseo del Horizonte es una ciudad turística costera reconocida por sus playas, paisajes y actividad turística.
-        Durante el verano recibe visitantes que buscan disfrutar del mar, la gastronomía y las distintas propuestas culturales y recreativas.
-        Te invitamos a descubrir todo lo que Paseo del Horizonte tiene para ofrecerte a vos y a tu familia o amigos.
-       </p>
-    </section>
 
-    <section>
-        <h2>Destacados de la ciudad</h2>
-        <article>
-            <h3>Playa Vista Eterna</h3>
-            <p>
-            Una de las principales playas de Paseo del Horizonte, ideal para
-            disfrutar del mar, descansar y contemplar el paisaje costero.
-            </p>
-        </article>
+        <img class="logo-grande" src="Imagenes/logocompleto.png" alt="">
 
-        <article>
-            <h3>Actividades acuáticas</h3>
-            <p>
-            La ciudad ofrece distintas actividades para disfrutar del mar,
-            como kayak, paseos en lancha y otras propuestas para los visitantes.
-            </p>
-        </article>
+        <img class="portada" src="Imagenes/playaIndex.jpg" alt="Vista de Paseo del Horizonte durante el día">
 
-        <article>
-            <h3>Plaza del Horizonte</h3>
+
+        <section>
+            <h2 class="titulo-seccion">
+                Conocé la ciudad de tus sueños
+            </h2>
+
             <p>
-            El corazón de la ciudad y uno de sus principales puntos de encuentro.
-            Está rodeada de bares, restaurantes y espacios donde disfrutar de la
-            vida nocturna.
+                Paseo del Horizonte es una ciudad turística costera reconocida por sus playas, paisajes y actividad turística.
+                Durante el verano recibe visitantes que buscan disfrutar del mar, la gastronomía y las distintas propuestas culturales y recreativas.
+                Te invitamos a descubrir todo lo que Paseo del Horizonte tiene para ofrecerte a vos y a tu familia o amigos.
             </p>
+        </section>
+
+
+        <section>
+            <h2 class="titulo-seccion">
+                Destacados de la ciudad
+            </h2>
+
+            <article class="tarjeta-contenido">
+                <h3 class="titulo-subseccion">
+                    Playa Vista Eterna
+                </h3>
+
+                <p>
+                    Una de las principales playas de Paseo del Horizonte, ideal para
+                    disfrutar del mar, descansar y contemplar el paisaje costero.
+                </p>
             </article>
-    </section>
 
-    <section>
-         <h2>Actividades y eventos</h2>
-    <p>
-        Paseo del Horizonte ofrece diferentes actividades y eventos durante
-        todo el año. En temporada de verano se destacan las propuestas al
-        aire libre, los eventos culturales y las actividades recreativas
-        para visitantes y residentes.
-    </p>
-    </section>
+            <article class="tarjeta-contenido">
+                <h3 class="titulo-subseccion">
+                    Actividades acuáticas
+                </h3>
+
+                <p>
+                    La ciudad ofrece distintas actividades para disfrutar del mar,
+                    como kayak, paseos en lancha y otras propuestas para los visitantes.
+                </p>
+            </article>
+
+
+            <article class="tarjeta-contenido">
+                <h3 class="titulo-subseccion">
+                    Plaza del Horizonte
+                </h3>
+
+                <p>
+                    El corazón de la ciudad y uno de sus principales puntos de encuentro.
+                    Está rodeada de bares, restaurantes y espacios donde disfrutar de la
+                    vida nocturna.
+                </p>
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="titulo-seccion">
+                Actividades y eventos
+            </h2>
+
+            <p>
+                Paseo del Horizonte ofrece diferentes actividades y eventos durante
+                todo el año. En temporada de verano se destacan las propuestas al
+                aire libre, los eventos culturales y las actividades recreativas
+                para visitantes y residentes.
+            </p>
+
+        </section>
 
     </main>
 
-    <footer>
-        <p>&copy; Trabajo Practico Grupal - Lenguajes Informaticos</p>
+
+    <footer class="pie-pagina">
+        <p>&copy; Trabajo Práctico Grupal - Lenguajes Informáticos</p>
     </footer>
 
 </body>

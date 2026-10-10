@@ -50,116 +50,99 @@ p {
     margin-bottom: 1rem;
 }
 
-header {
-    background-color: var(--verde-jade);
-    text-align: center;
-    padding: 2px;
-}
-
-header ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-}
-
 main {
     background-color: var(--crema);
     padding: 2px;
 }
 
-footer {
-    background-color: var(--marron-claro);
-    padding: 15px;
+
+/* =========================
+    HEADER
+   ========================= */
+
+.encabezado {
+    position: relative;
+    background-color: var(--verde-jade);
     text-align: center;
+    padding: 10px 160px;
 }
-.introduccion {
-    text-align: center;   
-    max-width: 700px;        
-    margin: 30px auto;        
-    font-size: 1.15rem;         
-    color: #444;              
-    line-height: 1.6;           
-}
-.titulo-lugares {
-    font-size: 2.2rem;         
-    font-weight: bold;          
-    color: black;   
-    margin-bottom: 10px;
-    text-align: center;        
-}
-.mi-menu-lugares {
-    margin-top: 15px;
+
+.encabezado-lista {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    list-style: none;
+    margin: 0.5rem 0;
 }
 
-.mi-menu-lugares a {
-    color: #ffffff !important;
+/* =========================
+    NAVEGACIÓN
+   ========================= */
+
+.navegacion-enlace {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-.titulo-paseo {
-    color: #ffffff !important;  
-    font-size: 2.0rem;        
-    font-weight: bold;         
-    margin-top: 15px;         
-    margin-bottom: 5px;       
-}
-.contenedor-tarjetas {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;    
-    gap: 40px;            
-    margin-top: 30px;
-}
-.tarjeta-lugar {
-    text-align: center;      
-    max-width: 500px;         
-}
-.tarjeta-lugar img {
-    display: block;
-    margin: 15px auto;
-    border-radius: 12px;
-    width: 1200px;
-    max-width: 800px;       
-    height: auto; 
-    position: relative;
-    left: -120px;
-         
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
 }
 
-/* ESTILOS DE CONTACTO (Formularios y Listas) */
+.navegacion-enlace:hover,
+.navegacion-enlace.activo {
+    background-color: var(--marron-claro);
+    color: #222;
+}
 
-form {
-    background-color: var(--blanco);
+/* =========================
+    TÍTULOS
+   ========================= */
+
+.titulo-principal {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+.titulo-seccion {
+    font-size: 1.8rem;
+    color: var(--verde-jade);
+}
+
+.titulo-subseccion {
+    font-size: 1.3rem;
+    color: #222;
+    border-bottom: 2px solid var(--marron-claro);
+    padding-bottom: 4px;
+}
+
+
+/* =========================
+    FORMULARIO
+   ========================= */
+
+.formulario {
+    background-color: #FFF;
     padding: 25px;
     border-radius: 8px;
     margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-fieldset {
+.formulario-fieldset {
     border: 1px solid var(--marron-claro);
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
 
-legend {
+.formulario-legend {
     font-weight: bold;
     color: var(--verde-jade);
     padding: 0 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
+.formulario-input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -169,15 +152,14 @@ textarea {
     font-family: inherit;
 }
 
-
-input:focus, textarea:focus, select:focus {
+.formulario-input:focus {
     outline: none;
     border-color: var(--verde-jade);
 }
 
-button[type="submit"] {
+.formulario-boton {
     background-color: var(--verde-jade);
-    color: var(--blanco);
+    color: #FFF;
     border: none;
     padding: 12px 20px;
     font-size: 1rem;
@@ -187,25 +169,111 @@ button[type="submit"] {
     transition: background-color 0.2s ease;
 }
 
-button[type="submit"]:hover {
+.formulario-boton:hover {
     background-color: #006655;
 }
 
+/* =========================
+    DATOS CLAVE
+   ========================= */
 
-dl {
-    background-color: var(--blanco);
+.lista-datos {
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-dt {
+.lista-datos dt {
     font-weight: bold;
     color: var(--verde-jade);
     margin-top: 10px;
 }
 
-dd {
+.lista-datos dd {
     margin-left: 15px;
     margin-bottom: 5px;
+}
+
+/* =========================
+    LOGOS
+   ========================= */
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+    width: auto;
+}
+
+.logo-grande {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 220px;
+    height: auto;
+}
+
+/* =========================
+    CONTENIDO
+   ========================= */
+
+.imagen-contenido {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta-contenido {
+    background-color: #fff;
+    border-left: 4px solid var(--marron-claro);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+    PORTADA
+   ========================= */
+
+.portada {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+/* =========================
+    FOOTER
+   ========================= */
+
+.pie-pagina {
+    background-color: var(--marron-claro);
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* =========================
+    RESPONSIVE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .encabezado {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        display: block;
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    .portada {
+        height: 200px;
+    }
 }

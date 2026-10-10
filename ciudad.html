@@ -9,94 +9,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Paseo del Horizonte</h1>
+    <header class="encabezado">
+
+        <img class="logo" src="Imagenes/logopelado.png" alt="">
+
+        <h1 class="titulo-principal">Paseo del Horizonte</h1>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de interés</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="encabezado-lista">
+                <li><a class="navegacion-enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion-enlace activo" href="ciudad.html" aria-current="page">Ciudad</a></li>
+                <li><a class="navegacion-enlace" href="lugares.html">Lugares de interés</a></li>
+                <li><a class="navegacion-enlace" href="actividades.html">Actividades</a></li>
+                <li><a class="navegacion-enlace" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
 
-        <img src="imagenes/playa-index.jpg" alt="Vista de Paseo del Horizonte durante el día" width="1000">
+        <img class="portada" src="Imagenes/playaIndex.jpg" alt="Vista de Paseo del Horizonte durante el día">
+        
+        <section>
+            <h2 class="titulo-seccion">Historia de Paseo del Horizonte</h2>
 
-        <section> 
-
-            <h2>Historia de Paseo del Horizonte</h2>
-            <p> 
-                Paseo del Horizonte es una ciudad costera reconocida por sus playas, 
+            <p>
+                Paseo del Horizonte es una ciudad costera reconocida por sus playas,
                 su paseo marítimo y su combinación entre tradición pesquera y turismo.
                 <br>
-                A lo largo de los años, la ciudad fue creciendo hasta convertirse en un importante destino turístico, 
-                manteniendo parte de sus costumbres y su identidad ligada al mar. 
+                A lo largo de los años, la ciudad fue creciendo hasta convertirse en un importante destino turístico,
+                manteniendo parte de sus costumbres y su identidad ligada al mar.
             </p>
 
-            <h3>1927 — Los comienzos</h3>
-            <p>
-                Paseo del Horizonte fue fundada en 1927 como un pequeño asentamiento costero
-                formado principalmente por familias de pescadores. Durante sus primeros años,
-                la actividad principal fue la pesca artesanal y el comercio de productos del mar.
-            </p>
+            <article class="tarjeta-contenido">
 
-            <h3>1940-1960 — El comienzo del turismo</h3>
-            <p>
-                Con la mejora de los caminos y la llegada de nuevos medios de transporte,
-                comenzaron a llegar visitantes de otras ciudades. Durante este período
-                aparecieron los primeros hoteles, restaurantes familiares, balnearios,
-                comercios y el primer paseo costero.
-            </p>
+                <h3 class="titulo-subseccion">1927 — Los comienzos</h3>
 
-            <h3>1970-1990 — La transformación turística</h3>
-            <p>
-                La ciudad tuvo un importante crecimiento y se construyeron nuevos barrios.
-                También comenzó a desarrollarse una zona comercial cercana a la costa,
-                junto con bares y locales nocturnos.
-            </p>
+                <p>
+                    Paseo del Horizonte fue fundada en 1927 como un pequeño asentamiento costero
+                    formado principalmente por familias de pescadores. Durante sus primeros años,
+                    la actividad principal fue la pesca artesanal y el comercio de productos del mar.
+                </p>
 
-            <h3>1990-Actualidad — La ciudad turística</h3>
-            <p>
-                Con el crecimiento del turismo, Paseo del Horizonte desarrolló una importante
-                vida nocturna. La Plaza del Horizonte se convirtió en uno de los lugares más
-                concurridos, rodeada de bares, restaurantes, cervecerías y locales de música.
-            </p>
+            </article>
 
+
+            <article class="tarjeta-contenido">
+
+                <h3 class="titulo-subseccion">1940-1960 — El comienzo del turismo</h3>
+
+                <p>
+                    Con la mejora de los caminos y la llegada de nuevos medios de transporte,
+                    comenzaron a llegar visitantes de otras ciudades. Durante este período
+                    aparecieron los primeros hoteles, restaurantes familiares, balnearios,
+                    comercios y el primer paseo costero.
+                </p>
+
+            </article>
+
+
+            <article class="tarjeta-contenido">
+
+                <h3 class="titulo-subseccion">1970-1990 — La transformación turística</h3>
+
+                <p>
+                    La ciudad tuvo un importante crecimiento y se construyeron nuevos barrios.
+                    También comenzó a desarrollarse una zona comercial cercana a la costa,
+                    junto con bares y locales nocturnos.
+                </p>
+
+            </article>
+
+
+            <article class="tarjeta-contenido">
+
+                <h3 class="titulo-subseccion">1990-Actualidad — La ciudad turística</h3>
+
+                <p>
+                    Con el crecimiento del turismo, Paseo del Horizonte desarrolló una importante
+                    vida nocturna. La Plaza del Horizonte se convirtió en uno de los lugares más
+                    concurridos, rodeada de bares, restaurantes, cervecerías y locales de música.
+                </p>
+
+            </article>
         </section>
 
-        <section> 
 
-            <h2>Barrios</h2>
+        <section>
+            <h2 class="titulo-seccion">Barrios</h2>
 
-            <h3>Centro</h3>
-            <p>
-                Es la zona comercial y administrativa de la ciudad. Allí se encuentra la
-                Plaza del Horizonte y gran parte de los restaurantes y comercios.
-            </p>
+            <article class="tarjeta-contenido">
 
-            <h3>Puerto Viejo</h3>
-            <p>
-                Es uno de los barrios más antiguos y conserva parte de la tradición pesquera
-                de la ciudad, con viviendas antiguas y pequeños comercios.
-            </p>
+                <h3 class="titulo-subseccion">Centro</h3>
 
-            <h3>Costanera</h3>
-            <p>
-                Se encuentra junto al mar y concentra hoteles, balnearios, restaurantes
-                y espacios destinados al turismo.
-            </p>
+                <p>
+                    Es la zona comercial y administrativa de la ciudad. Allí se encuentra la
+                    Plaza del Horizonte y gran parte de los restaurantes y comercios.
+                </p>
 
+            </article>
+
+
+            <article class="tarjeta-contenido">
+
+                <h3 class="titulo-subseccion">Puerto Viejo</h3>
+
+                <p>
+                    Es uno de los barrios más antiguos y conserva parte de la tradición pesquera
+                    de la ciudad, con viviendas antiguas y pequeños comercios.
+                </p>
+
+            </article>
+
+
+            <article class="tarjeta-contenido">
+
+                <h3 class="titulo-subseccion">Costanera</h3>
+
+                <p>
+                    Se encuentra junto al mar y concentra hoteles, balnearios, restaurantes
+                    y espacios destinados al turismo.
+                </p>
+
+            </article>
         </section>
 
-        <section> 
 
-            <h2>Costumbres</h2>
+        <section>
+            <h2 class="titulo-seccion">Costumbres</h2>
 
             <p>
                 Entre las principales costumbres de Paseo del Horizonte se encuentran
@@ -105,14 +149,13 @@
                 También son habituales las actividades acuáticas, los festivales y los
                 eventos culturales durante la temporada de verano.
             </p>
-
         </section>
 
+
         <section>
+            <h2 class="titulo-seccion">Datos clave</h2>
 
-            <h2>Datos clave</h2>
-
-            <dl>
+            <dl class="lista-datos">
                 <dt>Población</dt>
                 <dd>85.000 habitantes.</dd>
 
@@ -125,12 +168,11 @@
                 <dt>Clima</dt>
                 <dd>Templado marítimo, con veranos cálidos e inviernos moderados.</dd>
             </dl>
-
         </section>
 
     </main>
 
-    <footer>
+    <footer class="pie-pagina">
         <p>&copy; Trabajo Practico Grupal - Lenguajes Informaticos</p>
     </footer>
 

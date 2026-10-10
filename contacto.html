@@ -9,26 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body id="arriba">
 
-    <header>
-        <h1>Paseo del Horizonte</h1>
+<body>
+
+    <header class="encabezado">
+
+        <img class="logo" src="Imagenes/logopelado.png" alt="">
+        
+        <h1 class="titulo-principal">Paseo del Horizonte</h1>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de interés</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="encabezado-lista">
+                <li><a class="navegacion-enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion-enlace" href="ciudad.html">Ciudad</a></li>
+                <li><a class="navegacion-enlace" href="lugares.html">Lugares de interés</a></li>
+                <li><a class="navegacion-enlace" href="actividades.html">Actividades</a></li>
+                <li><a class="navegacion-enlace activo" href="contacto.html" aria-current="page">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
         <p><a href="#formulario">¿Tenés una duda puntual? Ir al formulario de consultas</a></p>
 
         <section>
-            <h2>Oficina Central de Turismo</h2>
+            <h2 class="titulo-seccion">Oficina Central de Turismo</h2>
             <p>La sede central de atención al visitante se encuentra frente a la histórica <strong>Plaza del Horizonte</strong>, epicentro de la vida social y nocturna de nuestra ciudad fundada en <em>1927</em>.</p>
 
             <address>
@@ -37,8 +43,8 @@
                 <p>Correo electrónico: <a href="mailto:turismo@paseodelhorizonte.gob.ar">turismo@paseodelhorizonte.gob.ar</a></p>
             </address>
 
-            <h3>Horarios de atención</h3>
-            <dl>
+            <h3 class="titulo-seccion">Horarios de atención</h3>
+            <dl class="lista-datos">
                 <dt>Lunes a Jueves</dt>
                 <dd>08:00 a 20:00 hs (Información general y paseos de playa)</dd>
 
@@ -50,32 +56,32 @@
             </dl>
         </section>
 
-        <section id="formulario">
-            <h2>Formulario de consultas</h2>
+        <section>
+            <h2 class="titulo-seccion">Formulario de consultas</h2>
             <p>Completá tus datos para recibir asesoramiento sobre hotelería, reservas naturales o el circuito de bares:</p>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Datos personales</legend>
+            <form class="formulario" action="#" method="post">
+                <fieldset class="formulario-fieldset">
+                    <legend class="formulario-legend">Datos personales</legend>
                     <p>
                         <label for="nombre">Nombre y apellido:</label><br>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        <input class="formulario-input" type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
                     </p>
                     <p>
                         <label for="email">Correo electrónico:</label><br>
-                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        <input class="formulario-input"  type="email" id="email" name="email" required placeholder="tu@email.com">
                     </p>
                     <p>
                         <label for="telefono">Teléfono:</label><br>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+                        <input class="formulario-input"  type="tel" id="telefono" name="telefono" placeholder="Opcional">
                     </p>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Motivo de la consulta</legend>
+                <fieldset class="formulario-fieldset">
+                    <legend class="formulario-legend">Motivo de la consulta</legend>
                     <p>
                         <label for="tipo-consulta">Área de interés:</label><br>
-                        <select id="tipo-consulta" name="tipo-consulta">
+                        <select class="formulario-input" id="tipo-consulta" name="tipo-consulta">
                             <option value="playa">Actividades diurnas y playas</option>
                             <option value="noche">Circuito nocturno (Plaza del Horizonte / Bares)</option>
                             <option value="alojamiento">Hoteles y balnearios</option>
@@ -84,10 +90,10 @@
                     </p>
                     <p>
                         <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Dejanos tu consulta..."></textarea>
+                        <textarea  class="formulario-input" id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Dejanos tu consulta..."></textarea>
                     </p>
                     <p>
-                        <button type="submit">Enviar consulta</button>
+                        <button class="formulario-boton" type="submit">Enviar consulta</button>
                     </p>
                 </fieldset>
             </form>
@@ -103,7 +109,7 @@
         </aside>
     </main>
 
-    <footer>
+    <footer class="pie-pagina">
         <p>&copy; Trabajo Práctico Grupal - Lenguajes Informáticos</p>
     </footer>
 

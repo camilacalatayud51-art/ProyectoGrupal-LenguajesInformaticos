@@ -9,60 +9,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-    <header>
-        <h1 class="titulo-paseo">Paseo del Horizonte</h1>
-        <nav class="mi-menu-lugares">
-            <a href="index.html">Inicio</a> 
-            <a href="ciudad.html">Ciudad</a>
-            <a href="lugares.html">Lugares de interes</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="actividades.html">Actividades</a>
+    <header class="encabezado">
+
+        <img class="logo" src="Imagenes/logopelado.png" alt="">
+        
+        <h1 class="titulo-principal">Paseo del Horizonte</h1>
+
+        <nav>
+            <ul class="encabezado-lista">
+                <li><a class="navegacion-enlace" href="index.html">Inicio</a></li>
+                <li><a class="navegacion-enlace" href="ciudad.html">Ciudad</a></li>
+                <li><a class="navegacion-enlace activo" href="lugares.html" aria-current="page">Lugares de interés</a></li>
+                <li><a class="navegacion-enlace" href="actividades.html">Actividades</a></li>
+                <li><a class="navegacion-enlace" href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
 
     </header>
 
- <main>
+    <main>
+
         <section>
-            <h2  class="titulo-lugares">Lugares de interés</h2>
-            <p class="introduccion">Paseo del Horizonte cuenta con espacios únicos diseñados para el descanso, la aventura y el entretenimiento de toda la familia. No te pierdas nuestros puntos más destacados:</p>
+
+            <h2 class="titulo-seccion">Lugares de interés</h2>
+            <p>Paseo del Horizonte cuenta con espacios únicos diseñados para el descanso, la aventura y el entretenimiento de toda la familia. No te pierdas nuestros puntos más destacados:</p>
             
             <!-- Contenedor para las tarjetas -->
-            <div class="contenedor-tarjetas">
+            <div>
                 
                 <!-- Lugar 1 -->
-                <article class="tarjeta-lugar">
-                    <h3>Playa Vista Eterna</h3>
+                <article class="tarjeta-contenido">
+                    <h3 class="titulo-seccion">Playa Vista Eterna</h3>
                     <p>La playa principal de la ciudad, ideal para relajarse y disfrutar del atardecer.</p>
-                    <button>Ver más información</button>
-                    <br>
-                    <img src="Imagenes/playa.proyecto.jpg" alt="Playa Vista Eterna" width="300">
                 </article>
+                <img class="portada" src="Imagenes/playa.proyecto.jpg" alt="Playa Vista Eterna" width="300">
 
                 <!-- Lugar 2 -->
-                <article class="tarjeta-lugar">
-                    <!-- Cargar imagenes del faro -->
-                    <h3>El Faro del Horizonte</h3>
+                <article class="tarjeta-contenido">
+                    <h3 class="titulo-seccion">El Faro del Horizonte</h3>
                     <p>Un mirador histórico con las mejores vistas panorámicas de la costa.</p>
-                    <button>Ver más información</button>
-                    <br>
-                    <img src="Imagenes/Faros.proyecto.webp" alt="El Faro del Horizonte" width="300">
                 </article>
+                <img class="portada" src="Imagenes/Faros.proyecto.webp" alt="El Faro del Horizonte" width="300">
 
-                <!-- Lugar 3- cargar imagen de paseo gastronomico -->
-                <article class="tarjeta-lugar">
-                    <h3>Paseo Gastronómico</h3>
+                <!-- Lugar 3 -->
+                <article class="tarjeta-contenido">
+                    <h3 class="titulo-seccion">Paseo Gastronómico</h3>
                     <p>El centro de la ciudad donde encontrarás los mejores restaurantes y comidas locales.</p>
-                    <button>Ver más información</button>
-                    <br>
-                    <img src="Imagenes/paseogastronomico.Amsterdam.jpg" alt="Paseo Gastronómico" width="300">
                 </article>
+                <img class="portada" src="Imagenes/paseogastronomico.Amsterdam.jpg" alt="Playa Vista Eterna" width="300">
 
             </div>
+            
         </section>
     </main>
-    <footer>
+    
+    <footer class="pie-pagina">
         <p>&copy; Trabajo Practico Grupal - Lenguajes Informaticos</p>
     </footer>
 
