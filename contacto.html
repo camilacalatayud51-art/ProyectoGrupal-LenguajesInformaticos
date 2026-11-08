@@ -7,28 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-    <header class="encabezado">
-
-        <img class="logo" src="Imagenes/logopelado.png" alt="">
-        
-        <h1 class="titulo-principal">Paseo del Horizonte</h1>
-
-        <nav>
-            <ul class="encabezado-lista">
-                <li><a class="navegacion-enlace" href="index.html">Inicio</a></li>
-                <li><a class="navegacion-enlace" href="ciudad.html">Ciudad</a></li>
-                <li><a class="navegacion-enlace" href="lugares.html">Lugares de interés</a></li>
-                <li><a class="navegacion-enlace" href="actividades.html">Actividades</a></li>
-                <li><a class="navegacion-enlace activo" href="contacto.html" aria-current="page">Contacto</a></li>
-            </ul>
+    <header class="cabecera">
+        <nav class="navbar navbar-expand-lg navbar-dark barra-navegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo-navbar" src="Imagenes/logopelado.png" alt="">
+                    Paseo del Horizonte
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu-principal" aria-controls="menu-principal"
+                        aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de interés</a></li>
+                        <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
+
 
     <main>
         <p><a href="#formulario">¿Tenés una duda puntual? Ir al formulario de consultas</a></p>
@@ -112,6 +121,8 @@
     <footer class="pie-pagina">
         <p>&copy; Trabajo Práctico Grupal - Lenguajes Informáticos</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
