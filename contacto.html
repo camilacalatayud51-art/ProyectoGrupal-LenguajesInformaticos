@@ -27,11 +27,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="menu-principal">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
                         <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de interés</a></li>
                         <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,7 @@
 
 
     <main>
-        <p><a href="#formulario">¿Tenés una duda puntual? Ir al formulario de consultas</a></p>
+        <p><a class="enlace-seccion" href="#formulario">¿Tenés una duda puntual? Ir al formulario de consultas</a></p>
 
         <section>
             <h2 class="titulo-seccion">Oficina Central de Turismo</h2>
@@ -48,8 +48,8 @@
 
             <address>
                 <p>Dirección: Av. Costanera y Plaza del Horizonte, Paseo del Horizonte</p>
-                <p>Teléfono de informes: <a href="tel:+541155551927">(011) 5555-1927</a></p>
-                <p>Correo electrónico: <a href="mailto:turismo@paseodelhorizonte.gob.ar">turismo@paseodelhorizonte.gob.ar</a></p>
+                <p>Teléfono de informes: <a class="enlace-seccion" href="tel:+541155551927">(011) 5555-1927</a></p>
+                <p>Correo electrónico: <a class="enlace-seccion" href="mailto:turismo@paseodelhorizonte.gob.ar">turismo@paseodelhorizonte.gob.ar</a></p>
             </address>
 
             <h3 class="titulo-seccion">Horarios de atención</h3>
@@ -65,7 +65,7 @@
             </dl>
         </section>
 
-        <section>
+        <section id="formulario">
             <h2 class="titulo-seccion">Formulario de consultas</h2>
             <p>Completá tus datos para recibir asesoramiento sobre hotelería, reservas naturales o el circuito de bares:</p>
 
@@ -78,11 +78,11 @@
                     </p>
                     <p>
                         <label for="email">Correo electrónico:</label><br>
-                        <input class="formulario-input"  type="email" id="email" name="email" required placeholder="tu@email.com">
+                        <input class="formulario-input" type="email" id="email" name="email" required placeholder="tu@email.com">
                     </p>
                     <p>
                         <label for="telefono">Teléfono:</label><br>
-                        <input class="formulario-input"  type="tel" id="telefono" name="telefono" placeholder="Opcional">
+                        <input class="formulario-input" type="tel" id="telefono" name="telefono" placeholder="Opcional">
                     </p>
                 </fieldset>
 
@@ -99,22 +99,45 @@
                     </p>
                     <p>
                         <label for="mensaje">Mensaje:</label><br>
-                        <textarea  class="formulario-input" id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Dejanos tu consulta..."></textarea>
+                        <textarea class="formulario-input" id="mensaje" name="mensaje" rows="5" cols="35" required placeholder="Dejanos tu consulta..."></textarea>
                     </p>
                     <p>
-                        <button class="formulario-boton" type="submit">Enviar consulta</button>
+                        <button class="btn btn-outline-primary btn-horizonte" type="submit">Enviar consulta</button>
                     </p>
                 </fieldset>
             </form>
         </section>
 
-        <aside>
-            <h2>Puestos de auxilio y asistencia</h2>
-            <ul>
-                <li><strong>Guardavidas Central:</strong> Casilla Bajada del Muelle</li>
-                <li><strong>SAME Costero:</strong> Línea 107</li>
-                <li><strong>Guardia Urbana Plaza del Horizonte:</strong> <a href="tel:+541155559110">(011) 5555-9110</a></li>
-            </ul>
+        <aside class="mb-4">
+            <h2 class="titulo-seccion">Puestos de auxilio y asistencia</h2>
+            <div class="container px-0">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card card-horizonte h-100">
+                            <div class="card-body">
+                                <h3 class="card-title titulo-subseccion">Guardavidas Central</h3>
+                                <p class="card-text">Casilla Bajada del Muelle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card card-horizonte h-100">
+                            <div class="card-body">
+                                <h3 class="card-title titulo-subseccion">SAME Costero</h3>
+                                <p class="card-text">Emergencias médicas: Línea 107.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card card-horizonte h-100">
+                            <div class="card-body">
+                                <h3 class="card-title titulo-subseccion">Guardia Urbana</h3>
+                                <p class="card-text">Plaza del Horizonte: <a class="enlace-seccion" href="tel:+541155559110">(011) 5555-9110</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
     </main>
 
