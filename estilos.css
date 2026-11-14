@@ -457,7 +457,7 @@ main {
     background: transparent;
     border-radius: 50%;
     cursor: pointer;
-    animation: pulso 2s infinite;
+    animation: pulso 3s infinite;
 }
 
 .marcador:hover {
