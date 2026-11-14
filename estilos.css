@@ -432,3 +432,27 @@ main {
         font-size: 1.6rem;
     }
 }
+
+/* Mapa turistico */
+
+.mapa-turistico{
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.mapa-turistico img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Efecto de Cards de imagenes */
+.card-imagenes {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-imagenes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
