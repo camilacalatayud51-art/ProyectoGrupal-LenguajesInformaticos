@@ -439,6 +439,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     border-radius: 15px;
+    position: relative;
 }
 
 .mapa-turistico img {
@@ -446,6 +447,44 @@ main {
     height: auto;
     display: block;
 }
+/* Marcadores con efecto hover */
+.marcador {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: none;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulso 2s infinite;
+}
+
+.marcador:hover {
+
+    transform: translate(-50%, -50%) scale(1.5);
+
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9) ;
+    filter: brightness(1.2);
+
+}
+/* Animación de los marcadores */
+
+/* Movimiento de pulso */
+
+@keyframes pulso {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.8);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(220, 53, 69, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(2220, 53, 69, 0);
+    }
+}
+
 /* Efecto de Cards de imagenes */
 .card-imagenes {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -455,4 +494,3 @@ main {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
