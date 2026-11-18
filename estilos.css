@@ -156,6 +156,12 @@ body.modo-oscuro .card-imagenes {
     color: #fff;
 }
 
+body.modo-oscuro .titulo-seccion,
+body.modo-oscuro .titulo-subseccion {
+    color: #fff;
+}
+
+
 /* =========================
     FORMULARIO
    ========================= */
