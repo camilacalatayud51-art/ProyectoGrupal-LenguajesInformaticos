@@ -4,6 +4,7 @@
     --verde-jade: #008571;
     --marron-claro: #C9A66B;
     --crema: #F5F1E8;
+    --modo-oscuro: #070707;
     --fuente-principal: "Libre Caslon Condensed", serif;
     --texto-principal: #2C2C2C;
 }
@@ -25,6 +26,7 @@ body {
     padding: 0 1rem;
     background-color: var(--crema);
     color: var(--texto-principal);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /*JERARQUÍA DE HEADINGS*/
@@ -51,6 +53,7 @@ p {
 }
 
 main {
+    transition: background-color 0.3s ease, color 0.3s ease;
     background-color: var(--crema);
     padding: 2px;
 }
@@ -114,6 +117,48 @@ main {
     color: #222;
     border-bottom: 2px solid var(--marron-claro);
     padding-bottom: 4px;
+}
+
+/* =========================
+    MODO OSCURO
+   ========================= */
+
+#boton-modo {
+    color: #fff;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#boton-modo:hover {
+    background-color: var(--marron-claro);
+    color: #222;
+}
+
+
+body.modo-oscuro {
+    background-color: var(--modo-oscuro);
+    color: #F5F1E8;
+}
+
+body.modo-oscuro main {
+    background-color: var(--modo-oscuro);
+}
+
+body.modo-oscuro .tarjeta-contenido,
+body.modo-oscuro .card-horizonte,
+body.modo-oscuro .formulario,
+body.modo-oscuro .formulario-fieldset,
+body.modo-oscuro .card-imagenes {
+    background-color: #222;
+    color: #fff;
+}
+
+
+body.modo-oscuro .titulo-subseccion {
+    color: #fff;
 }
 
 

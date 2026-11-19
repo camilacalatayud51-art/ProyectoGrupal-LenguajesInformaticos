@@ -32,6 +32,11 @@
                         <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de interés</a></li>
                         <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item">
+                            <button id="boton-modo" class="btn ms-3" type="button">
+                                Modo oscuro
+                            </button>
+                        </li>
                     </ul>
                     <button id="boton-modo" class="btn btn-outline-light ms-lg-3" type="button">
                             🌙 Modo oscuro
@@ -188,6 +193,17 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<<<<<<< HEAD
     <script src="main.js"></script>
+=======
+    <script>
+        const botonModo = document.getElementById("boton-modo");
+
+        botonModo.addEventListener("click", () => {
+            document.body.classList.toggle("modo-oscuro");
+        });
+    </script>
+
+>>>>>>> 5e794a029459afa37d8cde99a4c277095a62b0cc
 </body>
 </html>
