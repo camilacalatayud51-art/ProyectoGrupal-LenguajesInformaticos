@@ -23,7 +23,7 @@ Paseo-del-Horizonte/
 ├── actividades.html
 ├── contacto.html
 ├── estilos.css
-│
+├── main.js
 └── Imagenes/
     ├── logopelado.png
     ├── logocompleto.png
