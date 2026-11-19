@@ -717,3 +717,8 @@ body.modo-oscuro td,
 body.modo-oscuro th {
     color: #e8eee9;
 }
+/* Modo oscuro: página de actividades */
+body.modo-oscuro .seccion-fotos { background-color: #262626; }
+body.modo-oscuro .tarjeta-foto,
+body.modo-oscuro .lista-eventos li { background-color: #293832; }
+body.modo-oscuro .lista-eventos strong { color: #72cbb4; }
