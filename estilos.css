@@ -494,3 +494,90 @@ main {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* =========================
+   MODO OSCURO
+   ========================= */
+
+body.modo-oscuro {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+body.modo-oscuro main {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+/* Textos */
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro h4,
+body.modo-oscuro p,
+body.modo-oscuro li,
+body.modo-oscuro label {
+    color: #f5f5f5;
+}
+
+/* Tarjetas y formularios */
+body.modo-oscuro .card,
+body.modo-oscuro .card-body,
+body.modo-oscuro .card-horizonte,
+body.modo-oscuro .card-imagenes,
+body.modo-oscuro .tarjeta-contenido,
+body.modo-oscuro .formulario,
+body.modo-oscuro #info-mapa {
+    background-color: #293832 !important;
+    color: #e8eee9;
+    border-color: #486157;
+}
+
+/* Formularios */
+body.modo-oscuro input,
+body.modo-oscuro textarea,
+body.modo-oscuro select {
+    background-color: #202b27;
+    color: #e8eee9;
+    border-color: #587266;
+}
+
+body.modo-oscuro input::placeholder,
+body.modo-oscuro textarea::placeholder {
+    color: #b4c2ba;
+}
+
+/* Enlaces */
+body.modo-oscuro a {
+    color: #72cbb4;
+}
+
+/* Navbar */
+body.modo-oscuro .barra-navegacion {
+    background-color: #006b5b;
+}
+
+/* Footer */
+body.modo-oscuro .pie-pagina {
+    background-color: #5c422b;
+    color: #ffffff;
+}
+
+body.modo-oscuro .pie-pagina a {
+    color: #ffffff;
+}
+
+/* Botones */
+body.modo-oscuro .btn-success,
+body.modo-oscuro .formulario-boton {
+    background-color: #008571;
+    border-color: #008571;
+    color: #ffffff;
+}
+
+/* Tablas */
+body.modo-oscuro table,
+body.modo-oscuro td,
+body.modo-oscuro th {
+    color: #e8eee9;
+}
