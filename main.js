@@ -75,3 +75,29 @@ if (botonModo) {
         }
     });
 }
+
+/* =========================
+   VALIDACIÓN DE FORMULARIO
+   ========================= */
+
+const formulario = document.getElementById("form-contacto");
+
+if (formulario) {
+    formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensaje = document.getElementById("mensaje").value.trim();
+        const textoRespuesta = document.getElementById("mensaje-formulario");
+
+        if (nombre === "" || email === "" || mensaje === "") {
+            textoRespuesta.textContent = "Por favor, completá tu nombre, correo y mensaje antes de enviar.";
+            textoRespuesta.className = "text-danger fw-bold mt-2";
+        } else {
+            textoRespuesta.textContent = "¡Muchas gracias! Tu consulta fue enviada correctamente.";
+            textoRespuesta.className = "text-success fw-bold mt-2";
+            formulario.reset();
+        }
+    });
+}
